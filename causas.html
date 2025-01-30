@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Color e Imágen del encabezado de la página -->
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Cambio Climático</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <!-- Texto -->
+      <h1>Aprenda sobre el cambio climático</h1>
+      <p>Aprender es una buena forma de mejorar</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title">Algunas de las muchas causas del Cambio Climático son:</h2>
+    <h3>
+    Emisión de gases de efecto invernadero (GEI): <br>
+    • La quema de combustibles fósiles como el carbón, el petróleo y el gas natural al generar energía, para el transporte y la industria <br>‎ ‎ libera gases como dióxido de carbono (CO₂), metano (CH₄) y óxido nitroso (N₂O), que atrapan el calor en la atmósfera.
+    <br><br>
+    Deforestación: <br>
+    • La tala de bosques reduce la capacidad de la Tierra para absorber CO₂, ya que los árboles almacenan carbono. Además, la quema de <br>‎ ‎ biomasa emite grandes cantidades de CO₂ a la atmósfera.
+    <br><br>
+    Agricultura y ganadería: <br>
+    • Estas actividades emiten metano (producido por la fermentación digestiva de los animales) y óxido nitroso (por el uso de fertilizantes <br>‎ ‎ nitrogenados).
+    <br><br>
+    Industrialización y urbanización: <br>
+    • Las actividades industriales, la producción de cemento y la urbanización generan emisiones directas de GEI y contribuyen al <br>‎ ‎ aumento de las temperaturas locales debido al efecto de isla de calor urbano.
+    <br><br>
+    Residuos sólidos: <br>
+    • Los vertederos generan metano como subproducto de la descomposición de materia orgánica.
+    <br><br>
+    Erupciones volcánicas: <br>
+    • Pueden liberar grandes cantidades de dióxido de carbono y aerosoles a la atmósfera, lo que tiene un efecto temporal en el clima <br>‎ ‎ global.
+    <br><br>
+    Variaciones solares: <br>
+    • Cambios en la actividad solar pueden influir en la cantidad de energía recibida por la Tierra.
+    </h3> <br><br><br><br><br><br><br><br>
+
+    <h2 class="main__title">Ahora nos gustaria que viera la proxima Información sobre algunas soluciones para el Cambio Climático:</h2>
+
+
+
+
+
+<!-- Boton para ir a la siguiente página -->
+    <ul class="list" id="list">
+      <li class="list__item">
+        <a href={{caus + "/7"}}>
+          <!-- Asignación de imágen al botón -->
+          <img class="item__img" src="../static/img/causa.png" alt="solucion">
+          <span style="text-align: center;">Soluciones del <br> Cambio Climático</span></a>
+      </li>
+    </ul>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
