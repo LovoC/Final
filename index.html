@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Cambio Climático</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <!-- Color e Imágen del encabezado de la página -->
+      <h1>Aprenda sobre el cambio climático</h1>
+      <p>Aprender es una buena forma de mejorar</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+     <!-- Texto -->
+    <h2 class="main__title">Información:</h2>
+    <h3>
+      El Cambio Climático es algo muy presente en nuestras vidas, y es algo que nos incumbe a todos, asi que esta página es de informacion sobre el Cambio Climático. La pagina incluira tres temas, los cuales son: ¿Qué es el Cambio Climático?, Las causas del Cambio Climático y Algunas soluciones para el Cambio Climático.
+    </h3><br><br><br><br><br><br><br><br>
+    <h2 class="main__title">Ahora me gustaria que viera la proxima Información sobre el Cambio Climático:</h2>
+    
+    <!-- Boton para ir a la siguiente página -->
+    <ul class="list">
+      <li class="list__item">
+        <a href="defs">
+          <!-- Asignación de imágen al botón -->
+        <img class="item__img" src="../static/img/causa.png" alt="definicon">
+        <span style="text-align: center;">Definición del <br> cambio climático</span></a>
+      <!--  -->
+      </li>
+    </ul>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
